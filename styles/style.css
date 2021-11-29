@@ -55,7 +55,7 @@ a {
   height: 6rem;
   padding: 0 4.8rem;
   width: 100%;
-  background-color: rgb(21, 171, 191);
+  background-color: rgb(255, 255, 255);
 
   position: fixed;
   top: 0;
@@ -101,39 +101,67 @@ a {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 4.8rem;
-  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 12.8rem; */
 }
 
-.hero-img-box {
-  height: 30rem;
-  width: 30rem;
+.hero-img {
+  height: 20rem;
+  width: 20rem;
   border-radius: 50%;
-  background-color: #15aabf;
+  margin: 3.2rem;
+}
+
+.hero-contact {
+  padding: 3.6rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 0.4rem;
+  row-gap: 0.6rem;
+  align-items: flex-start;
+  justify-content: space-around;
+  grid-auto-rows: 1.8rem;
+}
+
+.contact-item,
+.contact-item:link,
+.contact-item:visited {
+  font-size: 1.4rem;
+  color: black;
+}
+
+.active-anchor:hover,
+.active-anchor:active {
+  border-bottom: 1px solid black;
+}
+
+.contact-icon {
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 /****************************************/
 /* PROFILE SECTION */
 /****************************************/
 
-.section-profile {
+/* .section-profile {
   background-color: #15aabf;
-}
+} */
 
 /****************************************/
 /* KNOWLEDGE SECTION */
 /****************************************/
 
-.section-knowledge {
+/* .section-knowledge {
   background-color: #fff;
-}
+} */
 
 /****************************************/
 /* INTERESTS SECTION */
 /****************************************/
 
-.section-interests {
+/* .section-interests {
   background-color: #15aabf;
-}
+} */
