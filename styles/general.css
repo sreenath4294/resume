@@ -14,7 +14,7 @@ Default: 1
 
 ---- 02 COLORS
 
---Primary: #f03e3e
+--Primary: #1971c2
 --Secondary: #e8e8e8
 --Tints: #fdf2e9
 --Shades: #a82b2b
@@ -65,6 +65,7 @@ body {
 .page-wrapper {
   box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.2);
   border-radius: 1.2rem;
+  overflow: hidden;
 }
 
 /****************************************/
@@ -78,12 +79,12 @@ body {
   letter-spacing: -0.5;
   margin-bottom: 3.2rem;
   padding: 0 3.2rem;
-  color: #1971c2;
+  color: #333;
 }
 
 .container {
   max-width: 120rem;
-  padding: 0 3.2rem;
+  /* padding: 0 3.2rem; */
   margin: 10.2rem auto;
 }
 
