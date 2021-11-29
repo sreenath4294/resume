@@ -82,8 +82,8 @@ a {
 
 .nav-option:hover,
 .nav-option:active {
-  color: #05505a;
-  border-bottom: 3px solid #05505a;
+  color: #1971c2;
+  border-bottom: 3px solid #1971c2;
 }
 
 /****************************************/
@@ -91,25 +91,18 @@ a {
 /****************************************/
 
 .section-hero {
-  /* height: 100vh; */
-  margin: 9.8rem auto;
-  padding: 9.8rem;
-  display: flex;
-  align-items: center;
-
-  /* background-image: url("../images/hero.jpg"); */
-}
-
-.hero {
   width: 100%;
+  padding: 3.6rem 0;
+  border-bottom: 1px solid #777;
+
   display: flex;
   justify-content: space-between;
-  /* gap: 12.8rem; */
+  align-items: center;
 }
 
 .hero-img {
-  height: 20rem;
-  width: 20rem;
+  height: 12rem;
+  width: 12rem;
   border-radius: 50%;
   margin: 3.2rem;
 }
@@ -120,8 +113,6 @@ a {
   grid-template-columns: 1fr auto;
   column-gap: 0.4rem;
   row-gap: 0.6rem;
-  align-items: flex-start;
-  justify-content: space-around;
   grid-auto-rows: 1.8rem;
 }
 
@@ -129,17 +120,19 @@ a {
 .contact-item:link,
 .contact-item:visited {
   font-size: 1.4rem;
-  color: black;
+  color: #333;
 }
 
 .active-anchor:hover,
 .active-anchor:active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #333;
 }
 
 .contact-icon {
   height: 1.8rem;
   width: 1.8rem;
+  fill: #333;
+  z-index: -1;
 }
 
 /****************************************/
