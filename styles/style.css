@@ -402,4 +402,11 @@ a {
   background-color: #1971c2;
   font-size: 1.4rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-btn:hover,
+.contact-btn:active {
+  color: #d1e3f3;
+  background-color: #07223a;
 }
