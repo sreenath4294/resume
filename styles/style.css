@@ -51,6 +51,10 @@ a {
   color: #333;
 }
 
+.name:hover {
+  color: #1971c2;
+}
+
 .nav-bar {
   height: 6rem;
   padding: 0 4.8rem;
@@ -110,16 +114,6 @@ a {
   position: relative;
 }
 
-.profile-img {
-  height: 32rem;
-  width: 32rem;
-  border-radius: 50%;
-  margin: 3.2rem 4.8rem;
-  border: 5px solid #fff;
-  position: absolute;
-  top: 15.6rem;
-}
-
 .hero-details {
   grid-column: 2 / 3;
   align-self: flex-end;
@@ -148,28 +142,7 @@ a {
   gap: 1.6rem;
 }
 
-/* .hero-contact {
-  padding: 3.6rem;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 0.4rem;
-  row-gap: 0.6rem;
-  grid-auto-rows: 1.8rem;
-}
-
-.contact-item,
-.contact-item:link,
-.contact-item:visited {
-  font-size: 1.4rem;
-  color: #fff;
-}
-
-.active-anchor:hover,
-.active-anchor:active {
-  border-bottom: 1px solid #fff;
-} */
-
-.contact-icon {
+.contact-hero-icon {
   height: 2.4rem;
   width: 2.4rem;
   fill: #fff;
@@ -181,7 +154,7 @@ a {
 /****************************************/
 
 .section-profile {
-  padding: 4.2rem;
+  padding: 0 4.2rem 4.2rem 4.2rem;
 }
 
 .profile {
@@ -190,13 +163,23 @@ a {
   column-gap: 3.2rem;
 }
 
+.profile-img {
+  height: 28rem;
+  width: 28rem;
+  border-radius: 50%;
+  margin: 3.2rem 4.8rem;
+  border: 5px solid #fff;
+  position: absolute;
+  top: 15.6rem;
+}
+
 .profile-details {
   grid-column: 2 / 3;
 }
 
 .profile-description {
   padding: 0 4.2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   font-weight: 400;
   color: #555;
@@ -226,6 +209,7 @@ a {
   font-size: 3.4rem;
   font-weight: 600;
   color: #333;
+  padding-bottom: 0.4rem;
 }
 
 .edu-tag {
@@ -265,6 +249,7 @@ a {
   font-size: 3.4rem;
   font-weight: 600;
   color: #333;
+  padding-bottom: 0.4rem;
 }
 
 .exp-tag {
@@ -305,6 +290,7 @@ a {
   font-size: 3.4rem;
   font-weight: 600;
   color: #333;
+  padding-bottom: 0.4rem;
 }
 
 .projects-tag {
@@ -322,17 +308,98 @@ a {
 }
 
 /****************************************/
-/* KNOWLEDGE SECTION */
-/****************************************/
-
-/* .section-knowledge {
-  background-color: #fff;
-} */
-
-/****************************************/
 /* INTERESTS SECTION */
 /****************************************/
 
 /* .section-interests {
   background-color: #15aabf;
 } */
+
+/****************************************/
+/* CONTACT SECTION */
+/****************************************/
+
+.section-contact {
+  background-color: #d1e3f3;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+}
+
+.contact-info {
+  padding: 4.2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1.2rem;
+  row-gap: 1.2rem;
+  grid-auto-rows: 1.8rem;
+}
+
+.contact-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: #333;
+  z-index: 1;
+}
+
+.contact-item,
+.contact-item:link,
+.contact-item:visited {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.active-anchor:hover,
+.active-anchor:active {
+  border-bottom: 1px solid #333;
+}
+
+.contact-form {
+  padding: 4.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-fullname,
+.row-message {
+  grid-column: 1 / 3;
+}
+
+.contact-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.contact-input {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  border: none;
+  border-bottom: 1px solid #555;
+  background-color: #d1e3f3;
+}
+
+/* .contact-input:hover,
+.contact-input:active {
+  border-bottom: 1px solid #1971c2;
+} */
+
+.contact-btn,
+.contact-btn:visited {
+  border: none;
+  padding: 1.2rem;
+  border-radius: 9px;
+  background-color: #1971c2;
+  font-size: 1.4rem;
+  font-weight: 600;
+}

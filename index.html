@@ -23,9 +23,9 @@
       <ul class="nav-options">
         <li><a href="#profile" class="nav-option">About me</a></li>
         <li><a href="#career" class="nav-option">Career</a></li>
-        <li><a href="#knowledge" class="nav-option">Knowledge</a></li>
+        <li><a href="#projects" class="nav-option">Projects</a></li>
         <li><a href="#interests" class="nav-option">Interests</a></li>
-        <li><a href="#contact-me" class="nav-option">Contact me</a></li>
+        <li><a href="#contact" class="nav-option">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -39,30 +39,13 @@
           <p class="hero-description">Web Application Developer</p>
           <div class="hero-icons">
             <a href="https://github.com/sreenath4294" target="_blank">
-              <ion-icon name="logo-github" class="contact-icon"></ion-icon>
+              <ion-icon name="logo-github" class="contact-hero-icon"></ion-icon>
             </a>
             <a href="https://www.linkedin.com/in/sreenath-gopinathan/" target="_blank">
-              <ion-icon name="logo-linkedin" class="contact-icon"></ion-icon>
+              <ion-icon name="logo-linkedin" class="contact-hero-icon"></ion-icon>
             </a>
           </div>
         </div>
-
-        <!-- <div class="hero-contact">
-          <ion-icon name="call" class="contact-icon"></ion-icon>
-          <a href="#" class="contact-item"><span class="active-anchor"> +91 80****1188</span></a>
-          <ion-icon name="mail" class="contact-icon"></ion-icon>
-          <a href="#" class="contact-item"><span class="active-anchor">
-              sreenath4294@gmail.com</span></a>
-          <ion-icon name="logo-github" class="contact-icon"></ion-icon>
-          <a href="https://github.com/sreenath4294" target="_blank" class="contact-item"><span class="active-anchor">
-              GitHub</span></a>
-          <ion-icon name="logo-linkedin" class="contact-icon"></ion-icon>
-          <a href="https://www.linkedin.com/in/sreenath-gopinathan/" target="_blank" class="contact-item"><span
-              class="active-anchor">
-              LinkedIn</span></a>
-          <ion-icon name="location" class="contact-icon"></ion-icon>
-          <p class="contact-item"> Kochi, Kerala, India</p>
-        </div> -->
       </div>
     </div>
 
@@ -138,7 +121,7 @@
       </div>
     </div>
 
-    <div class="section-projects" id="career">
+    <div class="section-projects" id="projects">
       <div class="projects container">
         <h1 class="heading-primary">Projects</h1>
         <div class="projects-details">
@@ -183,17 +166,56 @@
       </div>
     </div>
 
-    <!-- <div class="section-knowledge" id="knowledge">
-      <div class="knowledge container">
-        <h1 class="heading-primary">Knowledge</h1>
-      </div>
-    </div> -->
-
-    <!-- <div class="section-interests" id="interests">
+    <div class="section-interests" id="interests">
       <div class="interests container">
         <h1 class="heading-primary">Interests</h1>
       </div>
-    </div> -->
+    </div>
+
+    <div class="section-contact" id="contact">
+      <h1 class="heading-primary">Contact</h1>
+      <div class="contact container">
+        <div class="contact-details">
+          <div class="contact-info">
+            <ion-icon name="call" class="contact-icon"></ion-icon>
+            <a href="tel:+918086421188" class="contact-item"><span class="active-anchor"> +91 80****1188</span></a>
+            <ion-icon name="mail" class="contact-icon"></ion-icon>
+            <a href="mailto:sreenath4294@gmail.com" class="contact-item"><span class="active-anchor">
+                sreenath4294@gmail.com</span></a>
+            <ion-icon name="logo-github" class="contact-icon"></ion-icon>
+            <a href="https://github.com/sreenath4294" target="_blank" class="contact-item"><span class="active-anchor">
+                GitHub</span></a>
+            <ion-icon name="logo-linkedin" class="contact-icon"></ion-icon>
+            <a href="https://www.linkedin.com/in/sreenath-gopinathan/" target="_blank" class="contact-item"><span
+                class="active-anchor">
+                LinkedIn</span></a>
+            <ion-icon name="location" class="contact-icon"></ion-icon>
+            <p class="contact-item"> Kochi, Kerala, India</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="row row-fullname">
+            <label for="fullname" class="contact-label">Name *</label>
+            <input type="text" name="fullname" id="fullname" class="contact-input" required>
+          </div>
+          <div class="row row-email">
+            <label for="email" class="contact-label">Email *</label>
+            <input type="email" name="email" id="email" class="contact-input" required>
+          </div>
+          <div class="row row-subject">
+            <label for="subject" class="contact-label">Subject</label>
+            <input type="text" name="subject" id="subject" class="contact-input">
+          </div>
+          <div class="row row-message">
+            <label for="message" class="contact-label">Message</label>
+            <textarea type="text" name="message" id="message" class="contact-input"></textarea>
+          </div>
+          <div class="row">
+            <button type="submit" class="contact-btn">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
